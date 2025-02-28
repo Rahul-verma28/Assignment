@@ -48,7 +48,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
     >
       <div className="p-4">
         <div className="flex items-center">
-          <h1 className="text-2xl font-bold">WeHR</h1>
+          <h1 className="text-2xl font-bold cursor-pointer">WeHR</h1>
           <button className="ml-auto md:hidden" onClick={onClose}>
             <X className="h-5 w-5" />
           </button>

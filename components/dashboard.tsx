@@ -64,7 +64,7 @@ export default function Dashboard() {
 
         <main className="flex-1 overflow-y-auto p-4">
           <div className="max-w-7xl mx-auto">
-            <h1 className="text-2xl font-bold mb-6">Dashboard</h1>
+            <h1 className="text-2xl font-bold mb-6 ">Dashboard</h1>
 
             <div className="lg:flex w-full space-x-4">
               <div className="lg:w-[65%] w-full">
@@ -103,7 +103,6 @@ export default function Dashboard() {
                     value={216}
                     trend="+2%"
                     trendDirection="up"
-                    chartColor="#ef4444"
                     man={120}
                     woman={96}
                   />
@@ -113,7 +112,6 @@ export default function Dashboard() {
                     value={16}
                     trend="+5%"
                     trendDirection="up"
-                    chartColor="#ef4444"
                     man={6}
                     woman={10}
                   />

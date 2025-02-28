@@ -24,7 +24,7 @@ export function NavUser() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <div className="flex items-center space-x-1">
+        <div className="flex items-center space-x-1 cursor-pointer">
           <Avatar className="h-8 w-8 rounded-full">
             <AvatarImage src="/profile.png" alt="Rahul Verma" />
             <AvatarFallback className="rounded-lg">RV</AvatarFallback>
