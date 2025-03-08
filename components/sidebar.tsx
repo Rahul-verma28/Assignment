@@ -27,7 +27,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
   isOpen = isLargeScreen ? true : isOpen;
 
   const mainMenu = [
-    { icon: LayoutDashboard, label: "Dashboard", href: "#", isActive: true },
+    { icon: LayoutDashboard, label: "Dashboard", href: "/", isActive: true },
     { icon: Users, label: "Recruitment", href: "#" },
     { icon: Calendar, label: "Schedule", href: "#" },
     { icon: User, label: "Employee", href: "#" },
@@ -48,7 +48,7 @@ export default function Sidebar({ isOpen, onClose }: SidebarProps) {
     >
       <div className="p-4">
         <div className="flex items-center">
-          <h1 className="text-2xl font-bold cursor-pointer">WeHR</h1>
+          <Link href="/" className="text-2xl font-bold cursor-pointer">WeHR</Link>
           <button className="ml-auto md:hidden" onClick={onClose}>
             <X className="h-5 w-5" />
           </button>
