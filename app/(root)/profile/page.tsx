@@ -37,7 +37,7 @@ export default function ProfilePage() {
       }
     }
     fetchUser();
-  }, []);
+  }, [ ]);
 
   // Handle profile update
   const handleUpdate = async () => {
@@ -91,13 +91,9 @@ export default function ProfilePage() {
             </>
           ) : (
             <>
-              <Image
-                src={user.profileImage || "/default-avatar.png"}
-                alt="Profile"
-                width={120}
-                height={120}
-                className="rounded-full mx-auto"
-              />
+              <div className="relative w-[150px] h-[150px] mb-4 mx-auto">
+                        <Image src={user.profileImage || "/default-avatar.png"} alt="Uploaded Image" className="rounded-full object-cover" fill />
+                      </div>
               <h2 className="text-xl font-bold mt-4">{user.name}</h2>
               <p className="text-gray-500">{user.email}</p>
               <Button className="mt-4" onClick={() => setIsEditing(true)}>

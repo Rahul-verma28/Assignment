@@ -44,7 +44,7 @@ export function NavUser() {
       }
     }
     fetchUser();
-  }, []);
+  }, [user]);
 
   const handleLogout = async () => {
     try {
